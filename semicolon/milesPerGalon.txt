@@ -1,0 +1,20 @@
+
+total_miles = total_gallons = 0
+
+while True:
+    miles = input("Enter the miles driven (-1 to end): ")
+    if miles == "-1":
+        break
+    miles = float(miles)
+    gallons = float(input("Enter the gallons used: "))
+    
+    mpg = miles / gallons
+    print(f"The miles per gallon for this tankful was: {mpg}")
+    
+ 
+    total_miles += miles
+    total_gallons += gallons
+
+
+combined_mpg = total_miles / total_gallons
+print(f"The combined miles per gallon for all tankfuls was: {combined_mpg}")

@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 2, 2, 4, 5, 3, 1};
+        double sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        double mean = sum / numbers.length;
+        System.out.println("Mean of the array is: " + mean);
+
+      
+        Arrays.sort(numbers);
+        double median;
+        if (numbers.length % 2 == 0) {
+            median = ((double)numbers[numbers.length/2] + (double)numbers[numbers.length/2 - 1])/2;
+        } else {
+            median = (double) numbers[numbers.length/2];
+        }
+        System.out.println("Median of the array is: " + median);
+    }
+}

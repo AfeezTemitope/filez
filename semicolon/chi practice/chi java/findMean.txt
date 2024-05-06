@@ -1,0 +1,7 @@
+function findMin(numbers){
+	return Math.min(...numbers);
+}
+
+
+
+module.exports = findMin;

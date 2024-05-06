@@ -1,0 +1,19 @@
+
+
+import java.util.Scanner;
+
+public class SevenSegment {
+    public static void main(String... args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a binary digit you want to display: ");
+        String binaryString = scanner.nextLine();
+        int number = Integer.parseInt(binaryString, 2); 
+
+        switch (number) {
+           
+
+        }
+    }
+}
+

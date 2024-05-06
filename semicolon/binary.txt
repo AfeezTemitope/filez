@@ -1,0 +1,17 @@
+def binary_to_decimal(binary):
+    binary = int(binary)  # Ensure the binary input is an integer
+    decimal = 0  # This will hold our decimal number
+    power = 0  # This represents the power of 2 we are at
+
+    # While there are still digits in the binary number
+    while binary > 0:
+        # Get the last digit of the binary number
+        digit = binary % 10
+        # Add the digit times 2 to the power of the current position to the decimal number
+        decimal += digit * (2 ** power)
+        # Remove the last digit from the binary number
+        binary = binary // 10
+        # Move to the next power of 2
+        power += 1
+
+    return decimal
